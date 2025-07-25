@@ -1,11 +1,11 @@
 import "./App.css";
-import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, Router, RouterProvider } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Allpastes from "./components/Allpastes";
 import ViewPaste from "./components/ViewPaste";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: (
